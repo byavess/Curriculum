@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>Fabrício Medeiros - Curriculo</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -43,6 +43,8 @@
             font-size: 2.2rem;
             color: var(--text-main);
             margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         .subtitle {
@@ -55,7 +57,7 @@
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.8rem;
             font-size: 0.9rem;
             color: var(--text-muted);
         }
@@ -74,7 +76,7 @@
         }
 
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--accent-color);
             margin-bottom: 1rem;
             border-bottom: 1px solid var(--border-color);
@@ -88,29 +90,37 @@
             margin-bottom: 0.75rem;
         }
 
+        .job-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .job-item:last-child {
+            margin-bottom: 0;
+        }
+
         .job-title {
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: var(--text-main);
         }
 
         .job-company {
             color: var(--accent-color);
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
         }
 
-        ul.skills-list {
+        ul.styled-list {
             list-style-type: none;
         }
 
-        ul.skills-list li {
+        ul.styled-list li {
             margin-bottom: 0.5rem;
-            padding-left: 1rem;
+            padding-left: 1.2rem;
             position: relative;
         }
 
-        ul.skills-list li::before {
+        ul.styled-list li::before {
             content: "•";
             color: var(--accent-color);
             font-weight: bold;
@@ -128,43 +138,98 @@
     <div class="container">
         
         <header>
-            <h1>Seu Nome Completo</h1>
-            <div class="subtitle">Desenvolvedor Full Stack | Especialista em RPA & Automações</div>
+            <h1>Fabrício Medeiros</h1>
+            <div class="subtitle">Desenvolvedor Full Stack (Java/Angular) | Especialista em Automação com IA</div>
             <div class="contact-info">
-                <span>Brasília, DF</span>
+                <span>Santa Maria, DF – CEP 72.508-205</span>
                 <span>•</span>
-                <span><a href="mailto:seuemail@email.com">seuemail@email.com</a></span>
+                <span><a href="mailto:byaves@yahoo.com">byaves@yahoo.com</a></span>
                 <span>•</span>
-                <span><a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a></span>
+                <span>(61) 98432-1908</span>
                 <span>•</span>
-                <span><a href="https://github.com/seugithub" target="_blank">GitHub</a></span>
+                <span>Recado: (61) 98579-9339</span>
+                <span>•</span>
+                <span><a href="https://github.com/byavess" target="_blank">github.com/byavess</a></span>
             </div>
         </header>
 
         <section id="diferencial">
             <h2>O Diferencial (Foco em IA, Eficiência e Operações)</h2>
             <p>
-                Desenvolvedor Full Stack especializado no ecossistema Java (Spring Boot) e Angular, com sólida base técnica em modelagem de dados (SQL/NoSQL) e arquitetura de sistemas escaláveis. Diferencio-me pela vasta experiência em <span class="highlight">automação avançada de processos (RPA e n8n)</span> e pela aplicação estratégica de IA Generativa e ferramentas de produtividade (GitHub Copilot), otimizando o ciclo de desenvolvimento (SDLC), orquestrando workflows complexos e acelerando o debugging. Minha atuação é sustentada por um rigoroso padrão de qualidade técnica, aplicando práticas de TDD e controle de versão avançado (GitFlow). Possuo competências operacionais críticas em ambientes Linux (LPI 101-500) e infraestrutura, com especialização em Monitoramento e Observabilidade (Prometheus, Grafana e Zabbix), o que me permite atuar tanto no desenvolvimento de soluções robustas quanto na garantia da estabilidade e performance do sistema. Com vivência em projetos ágeis (Scrum/Kanban) em Brasília, foco na entrega de valor contínuo e na sinergia entre automação de software, desenvolvimento e excelência operacional.
+                Desenvolvedor Full Stack especializado no ecossistema Java (Spring Boot) e Angular, com sólida base técnica em modelagem de dados (SQL/NoSQL) e arquitetura de sistemas escaláveis. Destaco-me pela sólida vivência na criação e orquestração de automações inteligentes utilizando RPA e n8n, combinada à aplicação estratégica de IA Generativa e ferramentas de produtividade (GitHub Copilot). Essa sinergia me permite otimizar ponta a ponta o ciclo de desenvolvimento (SDLC), automatizar fluxos operacionais complexos e acelerar o debugging.
+            </p>
+            <p>
+                Minha atuação é sustentada por um rigoroso padrão de qualidade técnica, aplicando práticas de TDD e controle de versão avançado (GitFlow). Possuo competências operacionais críticas em ambientes Linux (LPI 101-500) e infraestrutura, com especialização em Monitoramento e Observabilidade (Prometheus, Grafana e Zabbix), o que me permite atuar tanto no desenvolvimento de soluções robustas quanto na garantia da estabilidade e performance do sistema. Com vivência em projetos ágeis (Scrum/Kanban) em Brasília, foco na entrega de valor contínuo e na sinergia entre o desenvolvimento de software e a excelência operacional.
             </p>
         </section>
 
         <section id="experiencia">
             <h2>Experiência Profissional</h2>
-            <div class="job-title">CDS Solutions — Prestação de Serviços</div>
-            <div class="job-company">Atuação em RPA e Automações</div>
-            <p>
-                Atuação na prestação de serviços com foco em Automação de Processos de Negócio (RPA) e orquestração de sistemas. Responsável pela arquitetura e desenvolvimento de robôs, interfaces e fluxos automatizados utilizando <strong>Python</strong>, <strong>Angular</strong> e <strong>React</strong>, realizando integrações avançadas via <strong>Evolution API</strong> para automação de mensagens e atendimento no WhatsApp. Responsável pela infraestrutura e conteinerização das rotinas através de <strong>Docker / Docker Compose</strong>, além do uso de <strong>Redis</strong> e bancos de dados para garantir alta disponibilidade, performance e rastreabilidade das operações.
-            </p>
+            
+            <div class="job-item">
+                <div class="job-title">CDS Solutions</div>
+                <div class="job-company">Prestação de Serviços (Atuação em RPA e Automações)</div>
+                <p>
+                    Atuação na prestação de serviços com foco em Automação de Processos de Negócio (RPA) e orquestração de sistemas. Responsável pela arquitetura e desenvolvimento de robôs, interfaces e fluxos automatizados utilizando Python, Angular e React, realizando integrações avançadas via Evolution API para automação de mensagens e atendimento no WhatsApp. Responsável pela infraestrutura e conteinerização das rotinas através de Docker / Docker Compose, além do uso de Redis e bancos de dados para garantir alta disponibilidade, performance e rastreabilidade das operações.
+                </p>
+            </div>
+
+            <div class="job-item">
+                <div class="job-title">SMARTSOFTWARE INFORMATICA — Desenvolvedor de Software</div>
+                <div class="job-company">Março 2022 – Março 2023</div>
+                <ul class="styled-list">
+                    <li>Atuação no desenvolvimento de módulos frontend em Angular, garantindo a responsividade e integração com APIs externas.</li>
+                    <li>Manutenção de sistemas legados em Java, realizando refatoração de código para melhoria de performance.</li>
+                    <li>Utilização de Scrum para alinhamento diário e entrega de sprints dentro do prazo.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-title">MINISTÉRIO DOS TRANSPORTES — Estagiário de TI</div>
+                <div class="job-company">Junho 2023 – Abril 2024</div>
+                <ul class="styled-list">
+                    <li>Apoio na análise de dados e suporte ao desenvolvimento de sistemas internos.</li>
+                    <li>Implementação de dashboards de monitoramento e auxílio na documentação técnica de processos.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <ul class="skills-list">
+            <h2>Competências Técnicas</h2>
+            <ul class="styled-list">
                 <li><strong>Backend:</strong> Java 8/17+, Spring Boot, JPA/Hibernate, RESTful APIs, Spring Security.</li>
-                <li><strong>Frontend:</strong> Angular 8+, React, TypeScript, RxJS, Sass/CSS3, HTML5 Semântico.</li>
+                <li><strong>Frontend:</strong> Angular 8+, TypeScript, RxJS, Sass/CSS3, HTML5 Semântico.</li>
                 <li><strong>Dados:</strong> MySQL, PostgreSQL, NoSQL (MongoDB), Modelagem de Dados.</li>
                 <li><strong>IA, Automação & Produtividade:</strong> RPA (Automação de Processos), n8n (Orquestração de Workflows), Engenharia de Prompt para Devs, GitHub Copilot.</li>
-                <li><strong>Infraestrutura & Observabilidade:</strong> Linux (LPI 101-500), Docker, Docker Compose, Redis, Prometheus, Grafana, Zabbix, GitFlow.</li>
+                <li><strong>DevOps & Ferramentas:</strong> Git (GitFlow), Docker (básico), Linux, VS Code, IntelliJ IDEA.</li>
+                <li><strong>Metodologias & Infraestrutura:</strong> Scrum, Kanban, TDD, Trilha Linux LPI 101-500, Python, Zabbix, Prometheus e Grafana.</li>
+            </ul>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação Acadêmica & Certificações</h2>
+            <ul class="styled-list">
+                <li><strong>Curso Superior em Tecnologia da Informação</strong> (Concluindo em 2024)</li>
+                <li><strong>Técnico em Eletrônica</strong> – ETB (4° Semestre – Curso Trancado)</li>
+                <li>Mastering Zabbix Graphs and Dashboards – Zabbix</li>
+                <li>DevOps Monitoring with Prometheus and Grafana – Simplilearn</li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos de Destaque</h2>
+            <ul class="styled-list">
+                <li><strong>Controle de Gastos Pessoais:</strong> <a href="https://github.com/byavess/controle-de-gastos" target="_blank">github.com/byavess/controle-de-gastos</a> — Aplicação para gestão financeira com foco em lógica de programação e manipulação de estados.</li>
+                <li><strong>Veículos Frontend (Angular):</strong> <a href="https://github.com/byavess/Veiculos-frontend" target="_blank">github.com/byavess/Veiculos-frontend</a> — Interface moderna desenvolvida em Angular, com consumo de API e componentes dinâmicos.</li>
+                <li><strong>API Cod3r (Backend Java):</strong> <a href="https://github.com/byavess/Api_cod3r" target="_blank">github.com/byavess/Api_cod3r</a> — Desenvolvimento de API REST utilizando Java e boas práticas de backend.</li>
+                <li><strong>Landing Page Responsiva:</strong> Angular & Integração de API — Projeto focado em UX/UI moderna, utilizando componentes modulares do Angular.</li>
+            </ul>
+        </section>
+
+        <section id="adicionais">
+            <h2>Informações Adicionais</h2>
+            <ul class="styled-list">
+                <li>CNH: Categoria AB</li>
             </ul>
         </section>
 
