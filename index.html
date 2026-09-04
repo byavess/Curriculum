@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-main);
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--text-main);
+        }
+
+        .job-company {
+            color: var(--accent-color);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul.skills-list {
+            list-style-type: none;
+        }
+
+        ul.skills-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        ul.skills-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Seu Nome Completo</h1>
+            <div class="subtitle">Desenvolvedor Full Stack | Especialista em RPA & Automações</div>
+            <div class="contact-info">
+                <span>Brasília, DF</span>
+                <span>•</span>
+                <span><a href="mailto:seuemail@email.com">seuemail@email.com</a></span>
+                <span>•</span>
+                <span><a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a></span>
+                <span>•</span>
+                <span><a href="https://github.com/seugithub" target="_blank">GitHub</a></span>
+            </div>
+        </header>
+
+        <section id="diferencial">
+            <h2>O Diferencial (Foco em IA, Eficiência e Operações)</h2>
+            <p>
+                Desenvolvedor Full Stack especializado no ecossistema Java (Spring Boot) e Angular, com sólida base técnica em modelagem de dados (SQL/NoSQL) e arquitetura de sistemas escaláveis. Diferencio-me pela vasta experiência em <span class="highlight">automação avançada de processos (RPA e n8n)</span> e pela aplicação estratégica de IA Generativa e ferramentas de produtividade (GitHub Copilot), otimizando o ciclo de desenvolvimento (SDLC), orquestrando workflows complexos e acelerando o debugging. Minha atuação é sustentada por um rigoroso padrão de qualidade técnica, aplicando práticas de TDD e controle de versão avançado (GitFlow). Possuo competências operacionais críticas em ambientes Linux (LPI 101-500) e infraestrutura, com especialização em Monitoramento e Observabilidade (Prometheus, Grafana e Zabbix), o que me permite atuar tanto no desenvolvimento de soluções robustas quanto na garantia da estabilidade e performance do sistema. Com vivência em projetos ágeis (Scrum/Kanban) em Brasília, foco na entrega de valor contínuo e na sinergia entre automação de software, desenvolvimento e excelência operacional.
+            </p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <div class="job-title">CDS Solutions — Prestação de Serviços</div>
+            <div class="job-company">Atuação em RPA e Automações</div>
+            <p>
+                Atuação na prestação de serviços com foco em Automação de Processos de Negócio (RPA) e orquestração de sistemas. Responsável pela arquitetura e desenvolvimento de robôs, interfaces e fluxos automatizados utilizando <strong>Python</strong>, <strong>Angular</strong> e <strong>React</strong>, realizando integrações avançadas via <strong>Evolution API</strong> para automação de mensagens e atendimento no WhatsApp. Responsável pela infraestrutura e conteinerização das rotinas através de <strong>Docker / Docker Compose</strong>, além do uso de <strong>Redis</strong> e bancos de dados para garantir alta disponibilidade, performance e rastreabilidade das operações.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <ul class="skills-list">
+                <li><strong>Backend:</strong> Java 8/17+, Spring Boot, JPA/Hibernate, RESTful APIs, Spring Security.</li>
+                <li><strong>Frontend:</strong> Angular 8+, React, TypeScript, RxJS, Sass/CSS3, HTML5 Semântico.</li>
+                <li><strong>Dados:</strong> MySQL, PostgreSQL, NoSQL (MongoDB), Modelagem de Dados.</li>
+                <li><strong>IA, Automação & Produtividade:</strong> RPA (Automação de Processos), n8n (Orquestração de Workflows), Engenharia de Prompt para Devs, GitHub Copilot.</li>
+                <li><strong>Infraestrutura & Observabilidade:</strong> Linux (LPI 101-500), Docker, Docker Compose, Redis, Prometheus, Grafana, Zabbix, GitFlow.</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>
