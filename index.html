@@ -1,238 +1,240 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabrício Medeiros - Curriculo</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-color: #38bdf8;
-            --border-color: #334155;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: var(--text-main);
-            margin-bottom: 0.25rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .contact-info a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        section {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        p {
-            color: var(--text-main);
-            margin-bottom: 0.75rem;
-        }
-
-        .job-item {
-            margin-bottom: 1.2rem;
-        }
-
-        .job-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .job-title {
-            font-weight: bold;
-            font-size: 1.05rem;
-            color: var(--text-main);
-        }
-
-        .job-company {
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.4rem;
-        }
-
-        ul.styled-list {
-            list-style-type: none;
-        }
-
-        ul.styled-list li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-
-        ul.styled-list li::before {
-            content: "•";
-            color: var(--accent-color);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        .highlight {
-            color: var(--accent-color);
-            font-weight: 600;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabrício Medeiros | Dev Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        
-        <header>
-            <h1>Fabrício Medeiros</h1>
-            <div class="subtitle">Desenvolvedor Full Stack (Java/Angular) | Especialista em Automação com IA</div>
-            <div class="contact-info">
-                <span>Santa Maria, DF – CEP 72.508-205</span>
-                <span>•</span>
-                <span><a href="mailto:byaves@yahoo.com">byaves@yahoo.com</a></span>
-                <span>•</span>
-                <span>(61) 98432-1908</span>
-                <span>•</span>
-                <span>Recado: (61) 98579-9339</span>
-                <span>•</span>
-                <span><a href="https://github.com/byavess" target="_blank">github.com/byavess</a></span>
-            </div>
-        </header>
 
-        <section id="diferencial">
-            <h2>O Diferencial (Foco em IA, Eficiência e Operações)</h2>
-            <p>
-                Desenvolvedor Full Stack especializado no ecossistema Java (Spring Boot) e Angular, com sólida base técnica em modelagem de dados (SQL/NoSQL) e arquitetura de sistemas escaláveis. Destaco-me pela sólida vivência na criação e orquestração de automações inteligentes utilizando RPA e n8n, combinada à aplicação estratégica de IA Generativa e ferramentas de produtividade (GitHub Copilot). Essa sinergia me permite otimizar ponta a ponta o ciclo de desenvolvimento (SDLC), automatizar fluxos operacionais complexos e acelerar o debugging.
-            </p>
-            <p>
-                Minha atuação é sustentada por um rigoroso padrão de qualidade técnica, aplicando práticas de TDD e controle de versão avançado (GitFlow). Possuo competências operacionais críticas em ambientes Linux (LPI 101-500) e infraestrutura, com especialização em Monitoramento e Observabilidade (Prometheus, Grafana e Zabbix), o que me permite atuar tanto no desenvolvimento de soluções robustas quanto na garantia da estabilidade e performance do sistema. Com vivência em projetos ágeis (Scrum/Kanban) em Brasília, foco na entrega de valor contínuo e na sinergia entre o desenvolvimento de software e a excelência operacional.
-            </p>
-        </section>
+  <div class="language-switch">
+    <input type="checkbox" id="lang-toggle" class="check-toggle">
+    <label for="lang-toggle" class="slider"></label>
+  </div>
 
-        <section id="experiencia">
-            <h2>Experiência Profissional</h2>
-            
-            <div class="job-item">
-                <div class="job-title">CDS Solutions</div>
-                <div class="job-company">Prestação de Serviços (Atuação em RPA e Automações)</div>
+  <div class="fluid-background">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="layout-container">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="profile-frame">
+          <img src="https://placehold.co/400x400/1e293b/38bdf8?text=FM" alt="Fabrício Medeiros" class="avatar">
+          <div class="online-status"></div>
+        </div>
+        <h1 class="dev-name">&lt;Fabrício Medeiros&gt;</h1>
+        <p class="dev-role">
+          <span class="pt-text">Dev Full Stack | RPA & Automações</span>
+          <span class="en-text">Full Stack Dev | RPA & Automations</span>
+        </p>
+      </div>
+
+      <div class="info-block">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Santa Maria, DF</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i> 
+          <a href="mailto:byaves@yahoo.com">byaves@yahoo.com</a>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/5561984321908" target="_blank">+55 (61) 98432-1908</a>
+        </div>
+      </div>
+
+      <div class="social-actions">
+        <a href="https://github.com/byavess" target="_blank" class="btn-social github">
+          <i class="fab fa-github"></i> <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="btn-social linkedin">
+          <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <div class="tech-stack">
+        <h3>_skills</h3>
+        <div class="tags-container">
+          <span class="tech-tag">Java 17+</span>
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">Angular</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">RPA</span>
+          <span class="tech-tag">n8n</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">Linux (LPI)</span>
+          <span class="tech-tag">Prometheus</span>
+          <span class="tech-tag">Grafana</span>
+          <span class="tech-tag">Zabbix</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <section class="dev-card about-section">
+        <div class="card-header">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+          <h2 class="terminal-title">user_profile.readme</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            <span class="syntax-const">const</span> <span class="syntax-var">desenvolvedor</span> = {<br>
+            &nbsp;&nbsp;nome: <span class="syntax-string">"Fabrício Medeiros"</span>,<br>
+            &nbsp;&nbsp;especialidade: <span class="syntax-string">"Java, Angular, RPA & IA Generativa"</span>,<br>
+            &nbsp;&nbsp;foco: <span class="syntax-string">"Eficiência, Operações e Arquitetura Escalável"</span><br>
+            };
+          </p>
+          <p class="bio-text" id="typing-effect" style="white-space: pre-line; line-height: 1.7; margin-top: 15px;"></p>
+        </div>
+      </section>
+
+      <section class="dev-card">
+        <div class="card-header">
+          <h2 class="terminal-title"><i class="fas fa-code-branch"></i> --experiences</h2>
+        </div>
+        <div class="card-body">
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="date-badge">Prestação de Serviços</div>
+                <h3>
+                  <span>CDS Solutions</span>
+                  <span class="at">@ Automações & RPA</span>
+                </h3>
                 <p>
-                    Atuação na prestação de serviços com foco em Automação de Processos de Negócio (RPA) e orquestração de sistemas. Responsável pela arquitetura e desenvolvimento de robôs, interfaces e fluxos automatizados utilizando Python, Angular e React, realizando integrações avançadas via Evolution API para automação de mensagens e atendimento no WhatsApp. Responsável pela infraestrutura e conteinerização das rotinas através de Docker / Docker Compose, além do uso de Redis e bancos de dados para garantir alta disponibilidade, performance e rastreabilidade das operações.
+                  Atuação com foco em Automação de Processos de Negócio (RPA) e orquestração de sistemas. Responsável pela arquitetura e desenvolvimento de robôs, interfaces e fluxos automatizados utilizando Python, Angular e React, realizando integrações avançadas via Evolution API para WhatsApp. Conteinerização das rotinas com Docker / Docker Compose e Redis.
                 </p>
+              </div>
             </div>
 
-            <div class="job-item">
-                <div class="job-title">SMARTSOFTWARE INFORMATICA — Desenvolvedor de Software</div>
-                <div class="job-company">Março 2022 – Março 2023</div>
-                <ul class="styled-list">
-                    <li>Atuação no desenvolvimento de módulos frontend em Angular, garantindo a responsividade e integração com APIs externas.</li>
-                    <li>Manutenção de sistemas legados em Java, realizando refatoração de código para melhoria de performance.</li>
-                    <li>Utilização de Scrum para alinhamento diário e entrega de sprints dentro do prazo.</li>
-                </ul>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="date-badge">2022 - 2023</div>
+                <h3>
+                  <span>Desenvolvedor de Software</span>
+                  <span class="at">@ SmartSoftware Informática</span>
+                </h3>
+                <p>
+                  Desenvolvimento de módulos frontend em Angular, manutenção de sistemas legados em Java com refatoração para performance e atuação com metodologias ágeis (Scrum).
+                </p>
+              </div>
             </div>
 
-            <div class="job-item">
-                <div class="job-title">MINISTÉRIO DOS TRANSPORTES — Estagiário de TI</div>
-                <div class="job-company">Junho 2023 – Abril 2024</div>
-                <ul class="styled-list">
-                    <li>Apoio na análise de dados e suporte ao desenvolvimento de sistemas internos.</li>
-                    <li>Implementação de dashboards de monitoramento e auxílio na documentação técnica de processos.</li>
-                </ul>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="date-badge">2023 - 2024</div>
+                <h3>
+                  <span>Estagiário de TI</span>
+                  <span class="at">@ Ministério dos Transportes</span>
+                </h3>
+                <p>
+                  Suporte ao desenvolvimento de sistemas internos, análise de dados, criação de dashboards de monitoramento e documentação técnica de processos.
+                </p>
+              </div>
             </div>
-        </section>
 
-        <section id="habilidades">
-            <h2>Competências Técnicas</h2>
-            <ul class="styled-list">
-                <li><strong>Backend:</strong> Java 8/17+, Spring Boot, JPA/Hibernate, RESTful APIs, Spring Security.</li>
-                <li><strong>Frontend:</strong> Angular 8+, TypeScript, RxJS, Sass/CSS3, HTML5 Semântico.</li>
-                <li><strong>Dados:</strong> MySQL, PostgreSQL, NoSQL (MongoDB), Modelagem de Dados.</li>
-                <li><strong>IA, Automação & Produtividade:</strong> RPA (Automação de Processos), n8n (Orquestração de Workflows), Engenharia de Prompt para Devs, GitHub Copilot.</li>
-                <li><strong>DevOps & Ferramentas:</strong> Git (GitFlow), Docker (básico), Linux, VS Code, IntelliJ IDEA.</li>
-                <li><strong>Metodologias & Infraestrutura:</strong> Scrum, Kanban, TDD, Trilha Linux LPI 101-500, Python, Zabbix, Prometheus e Grafana.</li>
-            </ul>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="formacao">
-            <h2>Formação Acadêmica & Certificações</h2>
-            <ul class="styled-list">
-                <li><strong>Curso Superior em Tecnologia da Informação</strong> (Concluindo em 2024)</li>
-                <li><strong>Técnico em Eletrônica</strong> – ETB (4° Semestre – Curso Trancado)</li>
-                <li>Mastering Zabbix Graphs and Dashboards – Zabbix</li>
-                <li>DevOps Monitoring with Prometheus and Grafana – Simplilearn</li>
-            </ul>
-        </section>
+      <section class="dev-card">
+        <div class="card-header">
+          <h2 class="terminal-title"><i class="fas fa-graduation-cap"></i> education_&_certifications.json</h2>
+        </div>
+        <div class="card-body education-list">
+          <div class="edu-item main">
+            <span class="edu-date-highlight">2024</span>
+            <div class="edu-content">
+              <strong class="degree-title">Curso Superior em Tecnologia da Informação</strong>
+              <span class="degree-school">Concluindo em 2024</span>
+            </div>
+          </div>
+          <hr class="divider-code">
+          <div class="edu-extras-grid">
+            <div class="course-item">
+              <span class="course-date">[Certificação]</span>
+              <div class="course-info">
+                <h4>Trilha Linux LPI 101-500</h4>
+                <p>Administração de sistemas e ambientes Linux operacionais.</p>
+              </div>
+            </div>
+            <div class="course-item">
+              <span class="course-date">[Zabbix]</span>
+              <div class="course-info">
+                <h4>Mastering Zabbix Graphs and Dashboards</h4>
+                <p>Monitoramento e observabilidade de infraestrutura.</p>
+              </div>
+            </div>
+            <div class="course-item">
+              <span class="course-date">[Simplilearn]</span>
+              <div class="course-info">
+                <h4>DevOps Monitoring with Prometheus & Grafana</h4>
+                <p>Criação de métricas e alertas de alta performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="projetos">
-            <h2>Projetos de Destaque</h2>
-            <ul class="styled-list">
-                <li><strong>Controle de Gastos Pessoais:</strong> <a href="https://github.com/byavess/controle-de-gastos" target="_blank">github.com/byavess/controle-de-gastos</a> — Aplicação para gestão financeira com foco em lógica de programação e manipulação de estados.</li>
-                <li><strong>Veículos Frontend (Angular):</strong> <a href="https://github.com/byavess/Veiculos-frontend" target="_blank">github.com/byavess/Veiculos-frontend</a> — Interface moderna desenvolvida em Angular, com consumo de API e componentes dinâmicos.</li>
-                <li><strong>API Cod3r (Backend Java):</strong> <a href="https://github.com/byavess/Api_cod3r" target="_blank">github.com/byavess/Api_cod3r</a> — Desenvolvimento de API REST utilizando Java e boas práticas de backend.</li>
-                <li><strong>Landing Page Responsiva:</strong> Angular & Integração de API — Projeto focado em UX/UI moderna, utilizando componentes modulares do Angular.</li>
-            </ul>
-        </section>
+    </main>
+  </div>
 
-        <section id="adicionais">
-            <h2>Informações Adicionais</h2>
-            <ul class="styled-list">
-                <li>CNH: Categoria AB</li>
-            </ul>
-        </section>
+  <script>
+    const bioTexts = {
+      pt: `Desenvolvedor Full Stack especializado no ecossistema Java (Spring Boot) e Angular, com sólida base em SQL/NoSQL e arquitetura de sistemas escaláveis.
 
-    </div>
+Destaco-me pela sólida vivência na criação e orquestração de automações inteligentes utilizando RPA e n8n, combinada à aplicação estratégica de IA Generativa (GitHub Copilot).
+
+Minha atuação é sustentada por TDD, GitFlow, ambientes Linux (LPI 101-500) e Observabilidade (Prometheus, Grafana e Zabbix), garantindo estabilidade e performance contínua.`,
+      en: `Full Stack Developer specialized in Java (Spring Boot) and Angular ecosystem, with solid background in SQL/NoSQL and scalable architecture.
+
+Strong experience in creating and orchestrating intelligent automations using RPA and n8n, alongside Generative AI integration (GitHub Copilot).
+
+Focused on TDD, GitFlow, Linux environments (LPI 101-500), and Observability (Prometheus, Grafana, and Zabbix).`
+    };
+
+    const typingElement = document.getElementById('typing-effect');
+    const typingSpeed = 5;
+    let charIndex = 0;
+    let currentLang = 'pt';
+    let typeTimeout;
+
+    function typeWriter() {
+      const textToType = bioTexts[currentLang];
+      if (charIndex < textToType.length) {
+        typingElement.innerHTML += textToType.charAt(charIndex);
+        charIndex++;
+        typeTimeout = setTimeout(typeWriter, typingSpeed);
+      }
+    }
+
+    window.onload = () => { typeWriter(); };
+
+    const langToggle = document.getElementById('lang-toggle');
+    langToggle.addEventListener('change', () => {
+      currentLang = langToggle.checked ? 'en' : 'pt';
+      clearTimeout(typeTimeout);
+      typingElement.innerHTML = '';
+      charIndex = 0;
+      typeWriter();
+    });
+  </script>
 </body>
 </html>
